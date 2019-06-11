@@ -1,6 +1,7 @@
 var express = require("express");
 var router = express.Router();
 var jwt = require("../../utils/jwt");
+var ApiError = require("../../utils/error");
 // 登录
 router.get("/login", (req, res) => {
   let token = jwt.sign({ uid: "3" });
@@ -12,12 +13,12 @@ router.use(async function jwtVerify(req, res, next) {
     let token = req.get("token");
     console.log(token);
     let payload = await jwt.check(token);
-    if (payload) {
-      next();
+    if (!payload) {
+      throw new ApiError(101, "token验证失败");
     }
-    res.json({ data: {}, status: 0, msg: "token验证失败" });
+    next();
   } catch (error) {
-    res.json({ data: {}, status: 0, msg: error });
+    throw new ApiError(101, "异常");
   }
 });
 // 注册
