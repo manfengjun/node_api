@@ -1,5 +1,6 @@
 const jwt = require("jsonwebtoken");
 const fs = require("fs");
+const HHError = require("./HHError");
 var token = {
   sign: function(payload, timeout) {
     // 获取签发 JWT 时需要用的密钥
@@ -11,18 +12,30 @@ var token = {
     });
     return token;
   },
-  check: function(token) {
+  check: async (ctx, next) => {
     // 获取验证 JWT 时需要用的公钥
     const publicKey = fs.readFileSync("./config/public_key.pem");
-    // 验证 Token
-    jwt.verify(token, publicKey, (error, payload) => {
-      if (error) {
-        console.log("token验证失败");
-        console.log(error.message);
-        return "";
-      }
-      return payload;
-    });
+    if (["/login"].indexOf(ctx.url) !== -1) {
+      await next();
+      return;
+    }
+    if (!ctx.header.authorization) {
+      // 没有携带token
+    }
+    let token = ctx.header.authorization.split(" ")[1];
+    if (!token) {
+      // ctx.throw(501);
+    }
+    try {
+      let payload = await jwt.verify(token, publicKey, {
+        algorithm: "RS256"
+      });
+      await next();
+    } catch (err) {
+      throw new HHError(-1, "token异常");
+      // ctx.throw(500);
+      // ctx.throw(500);
+    }
   }
 };
 module.exports = token;
