@@ -1,14 +1,11 @@
 const config = {
-  // 启动端口
-  port: 3000,
-
-  // 数据库配置
-  mysql: {
+  environment: "dev",
+  database: {
     database: "token",
-    username: "root",
-    password: "jun3672830",
-    port: "3306",
-    host: "localhost"
+    host: "localhost",
+    port: 3306,
+    user: "root",
+    password: "Jun3672830*"
   }
 };
 

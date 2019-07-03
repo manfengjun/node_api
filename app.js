@@ -6,6 +6,7 @@ const path = require("path");
 const cors = require("koa-cors"); //跨域访问组件
 const registerRouter = require("./routers/router");
 const jwt = require("./utils/jwt");
+const { Success, Failure } = require("./core/response");
 // 创建一个Koa对象表示web app本身:
 const app = new Koa();
 // 配置静态资源文件
@@ -19,10 +20,8 @@ app.use(async (ctx, next) => {
   try {
     await next();
   } catch (err) {
-    ctx.response.status = err.statusCode || err.status || 500;
-    ctx.response.body = {
-      message: err.message
-    };
+    ctx.response.status = 200;
+    Failure(err.status, err.msg);
   }
 });
 app.use(registerRouter());
