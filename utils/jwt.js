@@ -1,6 +1,6 @@
 const jwt = require("jsonwebtoken");
 const fs = require("fs");
-const HHError = require("./HHError");
+const { AuthFailedError } = require("../core/error");
 var token = {
   sign: function(payload, timeout) {
     // 获取签发 JWT 时需要用的密钥
@@ -32,9 +32,7 @@ var token = {
       });
       await next();
     } catch (err) {
-      throw new HHError(-1, "token异常");
-      // ctx.throw(500);
-      // ctx.throw(500);
+      throw new AuthFailedError();
     }
   }
 };
