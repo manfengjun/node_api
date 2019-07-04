@@ -1,6 +1,5 @@
-const Sequelize = require("sequelize");
 // 数据库配置文件
-const db = require("../../config/db");
+const db = require("../../core/db");
 // 引入Sequelize对象
 const Sequelize = db.sequelize;
 
@@ -10,7 +9,7 @@ user.sync({ force: false });
 class UserModel {
     // 注册用户
     static async regist(data) {
-        return awit user.create ({
+        return await user.create({
             password: data.password,
             mobile_phone: data.mobile_phone
         })

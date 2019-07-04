@@ -23,5 +23,9 @@ app.use(logger); // 输出日志
 app.use(bodyParser()); // body解析
 app.use(exception); // 错误处理中间件
 app.use(registerRouter());
+app.on('error', (err, ctx) => {
+  console.log('捕获到了!', err.message);
+});
+
 // 在端口3000监听:
 app.listen(3000);
