@@ -10,7 +10,7 @@ class Res {
   // json输出
   static json(ctx, status, msg, data = {}) {
     ctx.status = 200;
-    ctx.response.body = {
+    ctx.body = {
       status: status,
       msg: msg,
       data: data
@@ -18,7 +18,7 @@ class Res {
   }
   static success(ctx, msg = "请求成功", data = {}) {
     ctx.status = 200;
-    ctx.response.body = {
+    ctx.body = {
       status: 1,
       msg: msg,
       data: data
@@ -26,18 +26,17 @@ class Res {
   }
   static failure(ctx, status, msg) {
     ctx.status = 200;
-    ctx.response.body = {
+    ctx.body = {
       status: status,
       msg: msg,
       data: {}
     };
   }
   static error(ctx, error) {
-    console.log("sdf");
     ctx.status = 200;
-    ctx.response.body = {
-      status: error.status,
-      msg: error.msg,
+    ctx.body = {
+      status: error.status || 500,
+      msg: error.msg || "服务器异常",
       data: {}
     };
   }

@@ -17,6 +17,6 @@ router.get("/list", async (ctx, next) => {
   throw new AuthFailedError();
 });
 router.post("/regist", async (ctx, next) => {
-  account.register(ctx);
+  await account.register(ctx);
 });
 module.exports = router;
