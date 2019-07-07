@@ -1,6 +1,6 @@
 const { MethodError, ParameterError } = require("../../core/error");
 const res = require("../../core/res");
-const validate = require("validate");
+// const validate = require("validate");
 const userModule = require("./user_db");
 class Account {
   static async register(ctx) {
@@ -8,9 +8,9 @@ class Account {
     if (!req.mobile_phone || !req.password) {
       throw new ParameterError("参数错误");
     }
-    if (!validate.isMobilePhone(req.mobile_phone)) {
-      throw new ParameterError("手机号格式错误");
-    }
+    // if (!validate.isMobilePhone(req.mobile_phone)) {
+    //   throw new ParameterError("手机号格式错误");
+    // }
     const query = await userModule.getUserInfo(req.mobile_phone);
     if (query) {
       throw new MethodError("用户已存在");
