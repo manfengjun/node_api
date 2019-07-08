@@ -5,12 +5,6 @@ const userModule = require("./user_db");
 class Account {
   static async register(ctx) {
     const req = ctx.request.body;
-    if (!req.mobile_phone || !req.password) {
-      throw new ParameterError("参数错误");
-    }
-    // if (!validate.isMobilePhone(req.mobile_phone)) {
-    //   throw new ParameterError("手机号格式错误");
-    // }
     const query = await userModule.getUserInfo(req.mobile_phone);
     if (query) {
       throw new MethodError("用户已存在");
@@ -19,9 +13,10 @@ class Account {
         password: req.password,
         mobile_phone: req.mobile_phone
       };
-      const data = await userModule.userRegist(param);
+      const data = await userModule.regist(param);
 
-      if (data) {
+      if (!data) {
+        throw new MethodError("注册失败");
       }
       res.success(ctx, "用户注册成功", {
         mobile_phone: req.mobile_phone
@@ -29,5 +24,4 @@ class Account {
     }
   }
 }
-
 module.exports = Account;

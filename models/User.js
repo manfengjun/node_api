@@ -7,11 +7,13 @@ module.exports = function(sequelize, DataTypes) {
       customer_id: {
         type: DataTypes.INTEGER(255),
         allowNull: false,
-        primaryKey: true
+        primaryKey: true,
+        unique: true,
+        autoIncrement: true
       },
       cust_name: {
         type: DataTypes.STRING(50),
-        allowNull: false
+        allowNull: true
       },
       mobile_phone: {
         type: DataTypes.STRING(11),
@@ -44,7 +46,7 @@ module.exports = function(sequelize, DataTypes) {
       },
       cust_kind: {
         type: DataTypes.INTEGER(20),
-        allowNull: false
+        allowNull: true
       },
       portrait: {
         type: DataTypes.STRING(255),

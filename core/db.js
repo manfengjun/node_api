@@ -13,7 +13,10 @@ const sequelize = new Sequelize(database, user, password, {
   port,
   dialect: "mysql",
   logging: true,
-  timezone: "+08:00" //东八时区
+  timezone: "+08:00", //东八时区
+  define: {
+    timestamps: false
+  }
 });
 // 创建模型
 sequelize.sync({

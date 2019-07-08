@@ -2,3 +2,7 @@
 [2019-07-06T22:14:49.356] [INFO] access - ::1 - - "GET /api/v1/account/login HTTP/1.1" 200 493 "" "PostmanRuntime/7.1.5"
 [2019-07-06T22:15:34.295] [INFO] access - ::1 - - "GET /api/v1/account/regist HTTP/1.1" 405 - "" "PostmanRuntime/7.1.5"
 [2019-07-06T22:15:34.520] [INFO] access - ::1 - - "GET /api/v1/account/regist HTTP/1.1" 405 - "" "PostmanRuntime/7.1.5"
+[2019-07-08T15:42:48.981] [INFO] access - ::1 - - "POST /api/v1/account/regist HTTP/1.1" 200 77 "" "PostmanRuntime/7.15.0"
+[2019-07-08T16:04:09.611] [INFO] access - ::1 - - "POST /api/v1/account/regist HTTP/1.1" 200 77 "" "PostmanRuntime/7.15.0"
+[2019-07-08T16:05:09.279] [INFO] access - ::1 - - "POST /api/v1/account/regist HTTP/1.1" 200 77 "" "PostmanRuntime/7.15.0"
+[2019-07-08T16:06:38.763] [INFO] access - ::1 - - "POST /api/v1/account/regist HTTP/1.1" 200 77 "" "PostmanRuntime/7.15.0"

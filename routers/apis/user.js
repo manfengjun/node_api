@@ -2,6 +2,7 @@ const Router = require("koa-router");
 const { AuthFailedError, NotFoundError } = require("../../core/error");
 const res = require("../../core/res");
 const account = require("../../modules/account/account");
+const Parameter = require("parameter");
 const router = new Router({
   prefix: "/api/v1/account"
 });
