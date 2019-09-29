@@ -1,4 +1,0 @@
-[2019-07-08T16:04:02.352] [ERROR] application - { Error: 用户已存在
-    at Function.register (/Users/ios/JJGit/NodeJs/Koa/token/modules/account/account.js:10:13) status: -1, msg: '用户已存在' }
-[2019-07-08T16:06:27.392] [ERROR] application - { Error: 用户已存在
-    at Function.register (/Users/ios/JJGit/NodeJs/Koa/token/modules/account/account.js:10:13) status: -1, msg: '用户已存在' }
