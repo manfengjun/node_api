@@ -1,0 +1,9 @@
+INSERT INTO `Department`(`id`, `depart_num`, `company_id`, `partment_id`, `depart_name`, `isMenu`) VALUES (13, 'MRBM', 405363134, -1, '默认部门', 1);
+INSERT INTO `Department`(`id`, `depart_num`, `company_id`, `partment_id`, `depart_name`, `isMenu`) VALUES (14, 'SCB', 405363134, 1005, '市场部2', 1);
+INSERT INTO `Department`(`id`, `depart_num`, `company_id`, `partment_id`, `depart_name`, `isMenu`) VALUES (15, 'CW', 405363134, -1, '财务3', 1);
+INSERT INTO `Department`(`id`, `depart_num`, `company_id`, `partment_id`, `depart_name`, `isMenu`) VALUES (16, 'CGB', 405363134, -1, '仓管部3', 1);
+INSERT INTO `Department`(`id`, `depart_num`, `company_id`, `partment_id`, `depart_name`, `isMenu`) VALUES (1004, 'SCEB', 405363134, 1004, '市场二部', 1);
+INSERT INTO `Department`(`id`, `depart_num`, `company_id`, `partment_id`, `depart_name`, `isMenu`) VALUES (1005, 'ZZSCZX', 405363134, -1, '郑州市场中心', 0);
+INSERT INTO `Department`(`id`, `depart_num`, `company_id`, `partment_id`, `depart_name`, `isMenu`) VALUES (1006, 'NJSCB', 405363134, -1, '南京市场部', 0);
+INSERT INTO `Department`(`id`, `depart_num`, `company_id`, `partment_id`, `depart_name`, `isMenu`) VALUES (1008, 'BJSCB', 405363134, -1, '北京市场部', 1);
+INSERT INTO `Department`(`id`, `depart_num`, `company_id`, `partment_id`, `depart_name`, `isMenu`) VALUES (1009, 'NJSCYB', 405363134, 1006, '南京市场一部', 1);
