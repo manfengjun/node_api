@@ -1,0 +1,263 @@
+[2019-09-30T11:56:16.980] [ERROR] application - ReferenceError: reg is not defined
+    at Function.login (/Users/ios/JJGit/NodeJs/Koa/token/modules/account/account.js:28:17)
+    at router.post (/Users/ios/JJGit/NodeJs/Koa/token/routers/apis/user.js:11:17)
+    at dispatch (/Users/ios/JJGit/NodeJs/Koa/token/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/ios/JJGit/NodeJs/Koa/token/node_modules/koa-router/node_modules/koa-compose/index.js:45:18)
+    at /Users/ios/JJGit/NodeJs/Koa/token/node_modules/koa-router/lib/router.js:346:16
+    at dispatch (/Users/ios/JJGit/NodeJs/Koa/token/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at /Users/ios/JJGit/NodeJs/Koa/token/node_modules/koa-router/node_modules/koa-compose/index.js:36:12
+    at dispatch (/Users/ios/JJGit/NodeJs/Koa/token/node_modules/koa-router/lib/router.js:351:31)
+    at dispatch (/Users/ios/JJGit/NodeJs/Koa/token/node_modules/koa-compose/index.js:42:32)
+    at allowedMethods (/Users/ios/JJGit/NodeJs/Koa/token/node_modules/koa-router/lib/router.js:407:12)
+    at dispatch (/Users/ios/JJGit/NodeJs/Koa/token/node_modules/koa-compose/index.js:42:32)
+    at dispatch (/Users/ios/JJGit/NodeJs/Koa/token/node_modules/koa-router/lib/router.js:332:32)
+    at dispatch (/Users/ios/JJGit/NodeJs/Koa/token/node_modules/koa-compose/index.js:42:32)
+    at /Users/ios/JJGit/NodeJs/Koa/token/node_modules/koa-compose/index.js:34:12
+    at dispatch (/Users/ios/JJGit/NodeJs/Koa/token/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at /Users/ios/JJGit/NodeJs/Koa/token/node_modules/koa-log4/koa-logger.js:86:13
+    at dispatch (/Users/ios/JJGit/NodeJs/Koa/token/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at module.exports (/Users/ios/JJGit/NodeJs/Koa/token/core/exception.js:5:11)
+    at dispatch (/Users/ios/JJGit/NodeJs/Koa/token/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at bodyParser (/Users/ios/JJGit/NodeJs/Koa/token/node_modules/koa-bodyparser/index.js:86:11)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+[2019-09-30T11:57:04.487] [ERROR] application - { Error: auth failed
+    at router.get (/Users/ios/JJGit/NodeJs/Koa/token/routers/apis/user.js:14:9)
+    at dispatch (/Users/ios/JJGit/NodeJs/Koa/token/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/ios/JJGit/NodeJs/Koa/token/node_modules/koa-router/node_modules/koa-compose/index.js:45:18)
+    at /Users/ios/JJGit/NodeJs/Koa/token/node_modules/koa-router/lib/router.js:346:16
+    at dispatch (/Users/ios/JJGit/NodeJs/Koa/token/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at /Users/ios/JJGit/NodeJs/Koa/token/node_modules/koa-router/node_modules/koa-compose/index.js:36:12
+    at dispatch (/Users/ios/JJGit/NodeJs/Koa/token/node_modules/koa-router/lib/router.js:351:31)
+    at dispatch (/Users/ios/JJGit/NodeJs/Koa/token/node_modules/koa-compose/index.js:42:32)
+    at allowedMethods (/Users/ios/JJGit/NodeJs/Koa/token/node_modules/koa-router/lib/router.js:407:12)
+    at dispatch (/Users/ios/JJGit/NodeJs/Koa/token/node_modules/koa-compose/index.js:42:32)
+    at dispatch (/Users/ios/JJGit/NodeJs/Koa/token/node_modules/koa-router/lib/router.js:332:32)
+    at dispatch (/Users/ios/JJGit/NodeJs/Koa/token/node_modules/koa-compose/index.js:42:32)
+    at /Users/ios/JJGit/NodeJs/Koa/token/node_modules/koa-compose/index.js:34:12
+    at dispatch (/Users/ios/JJGit/NodeJs/Koa/token/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at /Users/ios/JJGit/NodeJs/Koa/token/node_modules/koa-log4/koa-logger.js:86:13
+    at dispatch (/Users/ios/JJGit/NodeJs/Koa/token/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at module.exports (/Users/ios/JJGit/NodeJs/Koa/token/core/exception.js:5:11)
+    at dispatch (/Users/ios/JJGit/NodeJs/Koa/token/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at bodyParser (/Users/ios/JJGit/NodeJs/Koa/token/node_modules/koa-bodyparser/index.js:86:11)
+    at process._tickCallback (internal/process/next_tick.js:68:7) status: 40002, msg: 'auth failed' }
+[2019-09-30T11:57:11.037] [ERROR] application - ReferenceError: reg is not defined
+    at Function.login (/Users/ios/JJGit/NodeJs/Koa/token/modules/account/account.js:28:17)
+    at router.post (/Users/ios/JJGit/NodeJs/Koa/token/routers/apis/user.js:11:17)
+    at dispatch (/Users/ios/JJGit/NodeJs/Koa/token/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/ios/JJGit/NodeJs/Koa/token/node_modules/koa-router/node_modules/koa-compose/index.js:45:18)
+    at /Users/ios/JJGit/NodeJs/Koa/token/node_modules/koa-router/lib/router.js:346:16
+    at dispatch (/Users/ios/JJGit/NodeJs/Koa/token/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at /Users/ios/JJGit/NodeJs/Koa/token/node_modules/koa-router/node_modules/koa-compose/index.js:36:12
+    at dispatch (/Users/ios/JJGit/NodeJs/Koa/token/node_modules/koa-router/lib/router.js:351:31)
+    at dispatch (/Users/ios/JJGit/NodeJs/Koa/token/node_modules/koa-compose/index.js:42:32)
+    at allowedMethods (/Users/ios/JJGit/NodeJs/Koa/token/node_modules/koa-router/lib/router.js:407:12)
+    at dispatch (/Users/ios/JJGit/NodeJs/Koa/token/node_modules/koa-compose/index.js:42:32)
+    at dispatch (/Users/ios/JJGit/NodeJs/Koa/token/node_modules/koa-router/lib/router.js:332:32)
+    at dispatch (/Users/ios/JJGit/NodeJs/Koa/token/node_modules/koa-compose/index.js:42:32)
+    at /Users/ios/JJGit/NodeJs/Koa/token/node_modules/koa-compose/index.js:34:12
+    at dispatch (/Users/ios/JJGit/NodeJs/Koa/token/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at /Users/ios/JJGit/NodeJs/Koa/token/node_modules/koa-log4/koa-logger.js:86:13
+    at dispatch (/Users/ios/JJGit/NodeJs/Koa/token/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at module.exports (/Users/ios/JJGit/NodeJs/Koa/token/core/exception.js:5:11)
+    at dispatch (/Users/ios/JJGit/NodeJs/Koa/token/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at bodyParser (/Users/ios/JJGit/NodeJs/Koa/token/node_modules/koa-bodyparser/index.js:86:11)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+[2019-09-30T11:58:12.846] [ERROR] application - ReferenceError: reg is not defined
+    at Function.login (/Users/ios/JJGit/NodeJs/Koa/token/modules/account/account.js:28:17)
+    at router.post (/Users/ios/JJGit/NodeJs/Koa/token/routers/apis/user.js:11:17)
+    at dispatch (/Users/ios/JJGit/NodeJs/Koa/token/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/ios/JJGit/NodeJs/Koa/token/node_modules/koa-router/node_modules/koa-compose/index.js:45:18)
+    at /Users/ios/JJGit/NodeJs/Koa/token/node_modules/koa-router/lib/router.js:346:16
+    at dispatch (/Users/ios/JJGit/NodeJs/Koa/token/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at /Users/ios/JJGit/NodeJs/Koa/token/node_modules/koa-router/node_modules/koa-compose/index.js:36:12
+    at dispatch (/Users/ios/JJGit/NodeJs/Koa/token/node_modules/koa-router/lib/router.js:351:31)
+    at dispatch (/Users/ios/JJGit/NodeJs/Koa/token/node_modules/koa-compose/index.js:42:32)
+    at allowedMethods (/Users/ios/JJGit/NodeJs/Koa/token/node_modules/koa-router/lib/router.js:407:12)
+    at dispatch (/Users/ios/JJGit/NodeJs/Koa/token/node_modules/koa-compose/index.js:42:32)
+    at dispatch (/Users/ios/JJGit/NodeJs/Koa/token/node_modules/koa-router/lib/router.js:332:32)
+    at dispatch (/Users/ios/JJGit/NodeJs/Koa/token/node_modules/koa-compose/index.js:42:32)
+    at /Users/ios/JJGit/NodeJs/Koa/token/node_modules/koa-compose/index.js:34:12
+    at dispatch (/Users/ios/JJGit/NodeJs/Koa/token/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at /Users/ios/JJGit/NodeJs/Koa/token/node_modules/koa-log4/koa-logger.js:86:13
+    at dispatch (/Users/ios/JJGit/NodeJs/Koa/token/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at module.exports (/Users/ios/JJGit/NodeJs/Koa/token/core/exception.js:5:11)
+    at dispatch (/Users/ios/JJGit/NodeJs/Koa/token/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at bodyParser (/Users/ios/JJGit/NodeJs/Koa/token/node_modules/koa-bodyparser/index.js:86:11)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+[2019-09-30T11:59:14.899] [ERROR] application - ReferenceError: reg is not defined
+    at Function.login (/Users/ios/JJGit/NodeJs/Koa/token/modules/account/account.js:28:17)
+    at router.post (/Users/ios/JJGit/NodeJs/Koa/token/routers/apis/user.js:11:17)
+    at dispatch (/Users/ios/JJGit/NodeJs/Koa/token/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/ios/JJGit/NodeJs/Koa/token/node_modules/koa-router/node_modules/koa-compose/index.js:45:18)
+    at /Users/ios/JJGit/NodeJs/Koa/token/node_modules/koa-router/lib/router.js:346:16
+    at dispatch (/Users/ios/JJGit/NodeJs/Koa/token/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at /Users/ios/JJGit/NodeJs/Koa/token/node_modules/koa-router/node_modules/koa-compose/index.js:36:12
+    at dispatch (/Users/ios/JJGit/NodeJs/Koa/token/node_modules/koa-router/lib/router.js:351:31)
+    at dispatch (/Users/ios/JJGit/NodeJs/Koa/token/node_modules/koa-compose/index.js:42:32)
+    at allowedMethods (/Users/ios/JJGit/NodeJs/Koa/token/node_modules/koa-router/lib/router.js:407:12)
+    at dispatch (/Users/ios/JJGit/NodeJs/Koa/token/node_modules/koa-compose/index.js:42:32)
+    at dispatch (/Users/ios/JJGit/NodeJs/Koa/token/node_modules/koa-router/lib/router.js:332:32)
+    at dispatch (/Users/ios/JJGit/NodeJs/Koa/token/node_modules/koa-compose/index.js:42:32)
+    at /Users/ios/JJGit/NodeJs/Koa/token/node_modules/koa-compose/index.js:34:12
+    at dispatch (/Users/ios/JJGit/NodeJs/Koa/token/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at /Users/ios/JJGit/NodeJs/Koa/token/node_modules/koa-log4/koa-logger.js:86:13
+    at dispatch (/Users/ios/JJGit/NodeJs/Koa/token/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at module.exports (/Users/ios/JJGit/NodeJs/Koa/token/core/exception.js:5:11)
+    at dispatch (/Users/ios/JJGit/NodeJs/Koa/token/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at bodyParser (/Users/ios/JJGit/NodeJs/Koa/token/node_modules/koa-bodyparser/index.js:86:11)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+[2019-09-30T11:59:38.667] [ERROR] application - ReferenceError: reg is not defined
+    at Function.login (/Users/ios/JJGit/NodeJs/Koa/token/modules/account/account.js:28:17)
+    at router.post (/Users/ios/JJGit/NodeJs/Koa/token/routers/apis/user.js:11:17)
+    at dispatch (/Users/ios/JJGit/NodeJs/Koa/token/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/ios/JJGit/NodeJs/Koa/token/node_modules/koa-router/node_modules/koa-compose/index.js:45:18)
+    at /Users/ios/JJGit/NodeJs/Koa/token/node_modules/koa-router/lib/router.js:346:16
+    at dispatch (/Users/ios/JJGit/NodeJs/Koa/token/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at /Users/ios/JJGit/NodeJs/Koa/token/node_modules/koa-router/node_modules/koa-compose/index.js:36:12
+    at dispatch (/Users/ios/JJGit/NodeJs/Koa/token/node_modules/koa-router/lib/router.js:351:31)
+    at dispatch (/Users/ios/JJGit/NodeJs/Koa/token/node_modules/koa-compose/index.js:42:32)
+    at allowedMethods (/Users/ios/JJGit/NodeJs/Koa/token/node_modules/koa-router/lib/router.js:407:12)
+    at dispatch (/Users/ios/JJGit/NodeJs/Koa/token/node_modules/koa-compose/index.js:42:32)
+    at dispatch (/Users/ios/JJGit/NodeJs/Koa/token/node_modules/koa-router/lib/router.js:332:32)
+    at dispatch (/Users/ios/JJGit/NodeJs/Koa/token/node_modules/koa-compose/index.js:42:32)
+    at /Users/ios/JJGit/NodeJs/Koa/token/node_modules/koa-compose/index.js:34:12
+    at dispatch (/Users/ios/JJGit/NodeJs/Koa/token/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at /Users/ios/JJGit/NodeJs/Koa/token/node_modules/koa-log4/koa-logger.js:86:13
+    at dispatch (/Users/ios/JJGit/NodeJs/Koa/token/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at module.exports (/Users/ios/JJGit/NodeJs/Koa/token/core/exception.js:5:11)
+    at dispatch (/Users/ios/JJGit/NodeJs/Koa/token/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at bodyParser (/Users/ios/JJGit/NodeJs/Koa/token/node_modules/koa-bodyparser/index.js:86:11)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+[2019-09-30T11:59:39.883] [ERROR] application - ReferenceError: reg is not defined
+    at Function.login (/Users/ios/JJGit/NodeJs/Koa/token/modules/account/account.js:28:17)
+    at router.post (/Users/ios/JJGit/NodeJs/Koa/token/routers/apis/user.js:11:17)
+    at dispatch (/Users/ios/JJGit/NodeJs/Koa/token/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/ios/JJGit/NodeJs/Koa/token/node_modules/koa-router/node_modules/koa-compose/index.js:45:18)
+    at /Users/ios/JJGit/NodeJs/Koa/token/node_modules/koa-router/lib/router.js:346:16
+    at dispatch (/Users/ios/JJGit/NodeJs/Koa/token/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at /Users/ios/JJGit/NodeJs/Koa/token/node_modules/koa-router/node_modules/koa-compose/index.js:36:12
+    at dispatch (/Users/ios/JJGit/NodeJs/Koa/token/node_modules/koa-router/lib/router.js:351:31)
+    at dispatch (/Users/ios/JJGit/NodeJs/Koa/token/node_modules/koa-compose/index.js:42:32)
+    at allowedMethods (/Users/ios/JJGit/NodeJs/Koa/token/node_modules/koa-router/lib/router.js:407:12)
+    at dispatch (/Users/ios/JJGit/NodeJs/Koa/token/node_modules/koa-compose/index.js:42:32)
+    at dispatch (/Users/ios/JJGit/NodeJs/Koa/token/node_modules/koa-router/lib/router.js:332:32)
+    at dispatch (/Users/ios/JJGit/NodeJs/Koa/token/node_modules/koa-compose/index.js:42:32)
+    at /Users/ios/JJGit/NodeJs/Koa/token/node_modules/koa-compose/index.js:34:12
+    at dispatch (/Users/ios/JJGit/NodeJs/Koa/token/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at /Users/ios/JJGit/NodeJs/Koa/token/node_modules/koa-log4/koa-logger.js:86:13
+    at dispatch (/Users/ios/JJGit/NodeJs/Koa/token/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at module.exports (/Users/ios/JJGit/NodeJs/Koa/token/core/exception.js:5:11)
+    at dispatch (/Users/ios/JJGit/NodeJs/Koa/token/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at bodyParser (/Users/ios/JJGit/NodeJs/Koa/token/node_modules/koa-bodyparser/index.js:86:11)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+[2019-09-30T12:00:05.468] [ERROR] application - ReferenceError: reg is not defined
+    at Function.login (/Users/ios/JJGit/NodeJs/Koa/token/modules/account/account.js:28:17)
+    at router.post (/Users/ios/JJGit/NodeJs/Koa/token/routers/apis/user.js:11:17)
+    at dispatch (/Users/ios/JJGit/NodeJs/Koa/token/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/ios/JJGit/NodeJs/Koa/token/node_modules/koa-router/node_modules/koa-compose/index.js:45:18)
+    at /Users/ios/JJGit/NodeJs/Koa/token/node_modules/koa-router/lib/router.js:346:16
+    at dispatch (/Users/ios/JJGit/NodeJs/Koa/token/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at /Users/ios/JJGit/NodeJs/Koa/token/node_modules/koa-router/node_modules/koa-compose/index.js:36:12
+    at dispatch (/Users/ios/JJGit/NodeJs/Koa/token/node_modules/koa-router/lib/router.js:351:31)
+    at dispatch (/Users/ios/JJGit/NodeJs/Koa/token/node_modules/koa-compose/index.js:42:32)
+    at allowedMethods (/Users/ios/JJGit/NodeJs/Koa/token/node_modules/koa-router/lib/router.js:407:12)
+    at dispatch (/Users/ios/JJGit/NodeJs/Koa/token/node_modules/koa-compose/index.js:42:32)
+    at dispatch (/Users/ios/JJGit/NodeJs/Koa/token/node_modules/koa-router/lib/router.js:332:32)
+    at dispatch (/Users/ios/JJGit/NodeJs/Koa/token/node_modules/koa-compose/index.js:42:32)
+    at /Users/ios/JJGit/NodeJs/Koa/token/node_modules/koa-compose/index.js:34:12
+    at dispatch (/Users/ios/JJGit/NodeJs/Koa/token/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at /Users/ios/JJGit/NodeJs/Koa/token/node_modules/koa-log4/koa-logger.js:86:13
+    at dispatch (/Users/ios/JJGit/NodeJs/Koa/token/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at module.exports (/Users/ios/JJGit/NodeJs/Koa/token/core/exception.js:5:11)
+    at dispatch (/Users/ios/JJGit/NodeJs/Koa/token/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at bodyParser (/Users/ios/JJGit/NodeJs/Koa/token/node_modules/koa-bodyparser/index.js:86:11)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+[2019-09-30T12:00:21.491] [ERROR] application - ReferenceError: reg is not defined
+    at Function.login (/Users/ios/JJGit/NodeJs/Koa/token/modules/account/account.js:28:19)
+    at router.post (/Users/ios/JJGit/NodeJs/Koa/token/routers/apis/user.js:11:17)
+    at dispatch (/Users/ios/JJGit/NodeJs/Koa/token/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/ios/JJGit/NodeJs/Koa/token/node_modules/koa-router/node_modules/koa-compose/index.js:45:18)
+    at /Users/ios/JJGit/NodeJs/Koa/token/node_modules/koa-router/lib/router.js:346:16
+    at dispatch (/Users/ios/JJGit/NodeJs/Koa/token/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at /Users/ios/JJGit/NodeJs/Koa/token/node_modules/koa-router/node_modules/koa-compose/index.js:36:12
+    at dispatch (/Users/ios/JJGit/NodeJs/Koa/token/node_modules/koa-router/lib/router.js:351:31)
+    at dispatch (/Users/ios/JJGit/NodeJs/Koa/token/node_modules/koa-compose/index.js:42:32)
+    at allowedMethods (/Users/ios/JJGit/NodeJs/Koa/token/node_modules/koa-router/lib/router.js:407:12)
+    at dispatch (/Users/ios/JJGit/NodeJs/Koa/token/node_modules/koa-compose/index.js:42:32)
+    at dispatch (/Users/ios/JJGit/NodeJs/Koa/token/node_modules/koa-router/lib/router.js:332:32)
+    at dispatch (/Users/ios/JJGit/NodeJs/Koa/token/node_modules/koa-compose/index.js:42:32)
+    at /Users/ios/JJGit/NodeJs/Koa/token/node_modules/koa-compose/index.js:34:12
+    at dispatch (/Users/ios/JJGit/NodeJs/Koa/token/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at /Users/ios/JJGit/NodeJs/Koa/token/node_modules/koa-log4/koa-logger.js:86:13
+    at dispatch (/Users/ios/JJGit/NodeJs/Koa/token/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at module.exports (/Users/ios/JJGit/NodeJs/Koa/token/core/exception.js:5:11)
+    at dispatch (/Users/ios/JJGit/NodeJs/Koa/token/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at bodyParser (/Users/ios/JJGit/NodeJs/Koa/token/node_modules/koa-bodyparser/index.js:86:11)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+[2019-09-30T12:00:22.581] [ERROR] application - ReferenceError: reg is not defined
+    at Function.login (/Users/ios/JJGit/NodeJs/Koa/token/modules/account/account.js:28:19)
+    at router.post (/Users/ios/JJGit/NodeJs/Koa/token/routers/apis/user.js:11:17)
+    at dispatch (/Users/ios/JJGit/NodeJs/Koa/token/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/ios/JJGit/NodeJs/Koa/token/node_modules/koa-router/node_modules/koa-compose/index.js:45:18)
+    at /Users/ios/JJGit/NodeJs/Koa/token/node_modules/koa-router/lib/router.js:346:16
+    at dispatch (/Users/ios/JJGit/NodeJs/Koa/token/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at /Users/ios/JJGit/NodeJs/Koa/token/node_modules/koa-router/node_modules/koa-compose/index.js:36:12
+    at dispatch (/Users/ios/JJGit/NodeJs/Koa/token/node_modules/koa-router/lib/router.js:351:31)
+    at dispatch (/Users/ios/JJGit/NodeJs/Koa/token/node_modules/koa-compose/index.js:42:32)
+    at allowedMethods (/Users/ios/JJGit/NodeJs/Koa/token/node_modules/koa-router/lib/router.js:407:12)
+    at dispatch (/Users/ios/JJGit/NodeJs/Koa/token/node_modules/koa-compose/index.js:42:32)
+    at dispatch (/Users/ios/JJGit/NodeJs/Koa/token/node_modules/koa-router/lib/router.js:332:32)
+    at dispatch (/Users/ios/JJGit/NodeJs/Koa/token/node_modules/koa-compose/index.js:42:32)
+    at /Users/ios/JJGit/NodeJs/Koa/token/node_modules/koa-compose/index.js:34:12
+    at dispatch (/Users/ios/JJGit/NodeJs/Koa/token/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at /Users/ios/JJGit/NodeJs/Koa/token/node_modules/koa-log4/koa-logger.js:86:13
+    at dispatch (/Users/ios/JJGit/NodeJs/Koa/token/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at module.exports (/Users/ios/JJGit/NodeJs/Koa/token/core/exception.js:5:11)
+    at dispatch (/Users/ios/JJGit/NodeJs/Koa/token/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at bodyParser (/Users/ios/JJGit/NodeJs/Koa/token/node_modules/koa-bodyparser/index.js:86:11)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+[2019-09-30T12:00:46.934] [ERROR] application - ReferenceError: reg is not defined
+    at Function.login (/Users/ios/JJGit/NodeJs/Koa/token/modules/account/account.js:28:19)
+    at router.post (/Users/ios/JJGit/NodeJs/Koa/token/routers/apis/user.js:11:17)
+    at dispatch (/Users/ios/JJGit/NodeJs/Koa/token/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/ios/JJGit/NodeJs/Koa/token/node_modules/koa-router/node_modules/koa-compose/index.js:45:18)
+    at /Users/ios/JJGit/NodeJs/Koa/token/node_modules/koa-router/lib/router.js:346:16
+    at dispatch (/Users/ios/JJGit/NodeJs/Koa/token/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at /Users/ios/JJGit/NodeJs/Koa/token/node_modules/koa-router/node_modules/koa-compose/index.js:36:12
+    at dispatch (/Users/ios/JJGit/NodeJs/Koa/token/node_modules/koa-router/lib/router.js:351:31)
+    at dispatch (/Users/ios/JJGit/NodeJs/Koa/token/node_modules/koa-compose/index.js:42:32)
+    at allowedMethods (/Users/ios/JJGit/NodeJs/Koa/token/node_modules/koa-router/lib/router.js:407:12)
+    at dispatch (/Users/ios/JJGit/NodeJs/Koa/token/node_modules/koa-compose/index.js:42:32)
+    at dispatch (/Users/ios/JJGit/NodeJs/Koa/token/node_modules/koa-router/lib/router.js:332:32)
+    at dispatch (/Users/ios/JJGit/NodeJs/Koa/token/node_modules/koa-compose/index.js:42:32)
+    at /Users/ios/JJGit/NodeJs/Koa/token/node_modules/koa-compose/index.js:34:12
+    at dispatch (/Users/ios/JJGit/NodeJs/Koa/token/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at /Users/ios/JJGit/NodeJs/Koa/token/node_modules/koa-log4/koa-logger.js:86:13
+    at dispatch (/Users/ios/JJGit/NodeJs/Koa/token/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at module.exports (/Users/ios/JJGit/NodeJs/Koa/token/core/exception.js:5:11)
+    at dispatch (/Users/ios/JJGit/NodeJs/Koa/token/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at bodyParser (/Users/ios/JJGit/NodeJs/Koa/token/node_modules/koa-bodyparser/index.js:86:11)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+[2019-09-30T12:00:47.993] [ERROR] application - ReferenceError: reg is not defined
+    at Function.login (/Users/ios/JJGit/NodeJs/Koa/token/modules/account/account.js:28:19)
+    at router.post (/Users/ios/JJGit/NodeJs/Koa/token/routers/apis/user.js:11:17)
+    at dispatch (/Users/ios/JJGit/NodeJs/Koa/token/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/ios/JJGit/NodeJs/Koa/token/node_modules/koa-router/node_modules/koa-compose/index.js:45:18)
+    at /Users/ios/JJGit/NodeJs/Koa/token/node_modules/koa-router/lib/router.js:346:16
+    at dispatch (/Users/ios/JJGit/NodeJs/Koa/token/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at /Users/ios/JJGit/NodeJs/Koa/token/node_modules/koa-router/node_modules/koa-compose/index.js:36:12
+    at dispatch (/Users/ios/JJGit/NodeJs/Koa/token/node_modules/koa-router/lib/router.js:351:31)
+    at dispatch (/Users/ios/JJGit/NodeJs/Koa/token/node_modules/koa-compose/index.js:42:32)
+    at allowedMethods (/Users/ios/JJGit/NodeJs/Koa/token/node_modules/koa-router/lib/router.js:407:12)
+    at dispatch (/Users/ios/JJGit/NodeJs/Koa/token/node_modules/koa-compose/index.js:42:32)
+    at dispatch (/Users/ios/JJGit/NodeJs/Koa/token/node_modules/koa-router/lib/router.js:332:32)
+    at dispatch (/Users/ios/JJGit/NodeJs/Koa/token/node_modules/koa-compose/index.js:42:32)
+    at /Users/ios/JJGit/NodeJs/Koa/token/node_modules/koa-compose/index.js:34:12
+    at dispatch (/Users/ios/JJGit/NodeJs/Koa/token/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at /Users/ios/JJGit/NodeJs/Koa/token/node_modules/koa-log4/koa-logger.js:86:13
+    at dispatch (/Users/ios/JJGit/NodeJs/Koa/token/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at module.exports (/Users/ios/JJGit/NodeJs/Koa/token/core/exception.js:5:11)
+    at dispatch (/Users/ios/JJGit/NodeJs/Koa/token/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at bodyParser (/Users/ios/JJGit/NodeJs/Koa/token/node_modules/koa-bodyparser/index.js:86:11)
+    at process._tickCallback (internal/process/next_tick.js:68:7)

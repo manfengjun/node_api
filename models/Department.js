@@ -30,6 +30,10 @@ module.exports = function(sequelize, DataTypes) {
       isMenu: {
         type: DataTypes.INTEGER(10),
         allowNull: false
+      },
+      haveSub: {
+        type: DataTypes.INTEGER(10),
+        allowNull: false
       }
     },
     {
