@@ -9,4 +9,7 @@ const router = new Router({
 router.post("/department", async (ctx, next) => {
   await app.department(ctx);
 });
+router.post("/city", async (ctx, next) => {
+  await app.city(ctx);
+});
 module.exports = router;
