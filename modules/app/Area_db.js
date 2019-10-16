@@ -13,5 +13,23 @@ class AreaModel {
       type: db.sequelize.QueryTypes.SELECT
     });
   }
+  // 获取市
+  static async fetchCity(title) {
+    return await area.sequelize.query(
+      "select distinct shi title from Area where sheng='" + title + "'",
+      {
+        type: db.sequelize.QueryTypes.SELECT
+      }
+    );
+  }
+  // 获取区
+  static async fetchDistrict(title) {
+    return await area.sequelize.query(
+      "select distinct xian as title,id from Area where shi='" + title + "'",
+      {
+        type: db.sequelize.QueryTypes.SELECT
+      }
+    );
+  }
 }
 module.exports = AreaModel;

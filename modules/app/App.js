@@ -29,9 +29,11 @@ class App {
         data = await areaModule.fetchProvince();
         break;
       case 2:
-        data = await areaModule.fetchArea(level, title);
+        data = await areaModule.fetchCity(title);
+        break;
       case 3:
-        data = await areaModule.fetchArea(level, title);
+        data = await areaModule.fetchDistrict(title);
+        break;
       default:
         break;
     }
