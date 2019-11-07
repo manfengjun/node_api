@@ -1,0 +1,102 @@
+{
+    "detailsMap": {
+        "province": "北京市",
+        "mobile_phone": "15852541256",
+        "operationer": "lyp",
+        "buyer": "客户",
+        "create_time": 1573026736000,
+        "district": "房山区",
+        "status": 1,
+        "approval_id": 440,
+        "apply_kind": 1,
+        "payment_money": 0,
+        "shipping_money": 0,
+        "apply_money": 3000,
+        "city": "北京市",
+        "apply_time": "2019-11-06 15:51:50",
+        "simple_money": 20,
+        "shipping_phone": "无",
+        "cust_name": "lyp",
+        "apply_name": "客户",
+        "approval_sn": "1911061585011",
+        "goods_num": 1,
+        "id": 440,
+        "UUID": "1911061585011",
+        "company_id": 405363642,
+        "bill": "FmMtbzl18WXkq-xV8gdxmGXJWc98,FiHTStBifvJTsETFdfVLzYSEdnjq,FmMtbzl18WXkq-xV8gdxmGXJWc98",
+        "goods_money": 20,
+        "approval_custid": 130862,
+        "customer_id": 130863,
+        "apply_type": 0,
+        "update_time": 1573026736000,
+        "remarks": "Group类型默认设置tableView灰色背景色，cell为白色背景色，section外边缘设置浅灰色边框，cell设置浅灰色间隔线",
+        "cust_id": 23379,
+        "shipping_user": "aa",
+        "address": "北京市房山区中粮万科FUNMIX半岛广场"
+    },
+    "goodslist": [
+        {
+            "goods_name": "商品C",
+            "goodsUnit": {
+                "update_time": 1568260684000,
+                "unit_id_min": 6795,
+                "unit_id_one": 0,
+                "unit_num_one": 0,
+                "unit_id": 229,
+                "create_time": 1568259150000,
+                "unit_name_min": "包",
+                "unit_num_two": 0,
+                "unit_id_two": 0
+            },
+            "money": 20,
+            "id": 1,
+            "simple_id": "440",
+            "order_sum": 1,
+            "goods_pic_url": "http:\/\/img.wtdms.com\/FmMtbzl18WXkq-xV8gdxmGXJWc98",
+            "weight_sum": 0,
+            "order_unit": " 包 ",
+            "goods_sn": "SP1909121131637",
+            "cust_id": 23379,
+            "goods_id": 230,
+            "unitnum": 1,
+            "order_price": 20
+        },
+        {
+            "goods_name": "商品D",
+            "goodsUnit": {
+                "update_time": 1568260684000,
+                "unit_id_min": 6795,
+                "unit_id_one": 0,
+                "unit_num_one": 0,
+                "unit_id": 229,
+                "create_time": 1568259150000,
+                "unit_name_min": "包",
+                "unit_num_two": 0,
+                "unit_id_two": 0
+            },
+            "money": 20,
+            "id": 1,
+            "simple_id": "440",
+            "order_sum": 1,
+            "goods_pic_url": "http:\/\/img.wtdms.com\/FmMtbzl18WXkq-xV8gdxmGXJWc98",
+            "weight_sum": 0,
+            "order_unit": " 盒 ",
+            "goods_sn": "SP1909121131637",
+            "cust_id": 23379,
+            "goods_id": 230,
+            "unitnum": 1,
+            "order_price": 20
+        }
+    ],
+    "statusList": [
+        {
+            "status": "审批通过",
+            "time": "2019-09-24 11:14:47",
+            "custName": "ceshi"
+        },
+        {
+            "time": "2019-09-23 09:24:50",
+            "custName": "嘻哈猴"
+        }
+    ]
+}

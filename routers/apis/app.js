@@ -12,4 +12,10 @@ router.post("/department", async (ctx, next) => {
 router.post("/city", async (ctx, next) => {
   await app.city(ctx);
 });
+router.post("/approve/type", async (ctx, next) => {
+  await app.approve_type(ctx);
+});
+router.post("/approve/detail", async (ctx, next) => {
+  await app.approve_detail(ctx);
+});
 module.exports = router;
