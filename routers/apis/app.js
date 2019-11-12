@@ -18,4 +18,7 @@ router.post("/approve/type", async (ctx, next) => {
 router.post("/approve/detail", async (ctx, next) => {
   await app.approve_detail(ctx);
 });
+router.post("/approve/goods", async (ctx, next) => {
+  await app.approve_goods(ctx);
+});
 module.exports = router;

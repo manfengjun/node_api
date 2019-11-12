@@ -4,6 +4,7 @@ const res = require("../../core/res");
 const areaModule = require("./area_db");
 const approve_types = require("../json/Approve_Type.json");
 const approve_detail = require("../json/Approve_Detail.json");
+const approve_goods = require("../json/Approve_Goods.json");
 
 class App {
   static async department(ctx) {
@@ -49,6 +50,9 @@ class App {
   }
   static async approve_detail(ctx) {
     res.success(ctx, "查询审批详情成功", approve_detail);
+  }
+  static async approve_goods(ctx) {
+    res.success(ctx, "查询商品成功", approve_goods);
   }
 }
 module.exports = App;
