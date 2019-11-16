@@ -2,9 +2,11 @@ const { MethodError, ParameterError } = require("../../core/error");
 const res = require("../../core/res");
 // const validate = require("validate");
 const areaModule = require("./area_db");
-const approve_types = require("../json/Approve_Type.json");
-const approve_detail = require("../json/Approve_Detail.json");
-const approve_goods = require("../json/Approve_Goods.json");
+const approve_types = require("../json/Approve/Approve_Type.json");
+const approve_detail = require("../json/Approve/Approve_Detail.json");
+const approve_goods = require("../json/Approve/Approve_Goods.json");
+
+const attence = require("../json/Attence/attence.json");
 
 class App {
   static async department(ctx) {
@@ -53,6 +55,19 @@ class App {
   }
   static async approve_goods(ctx) {
     res.success(ctx, "查询商品成功", approve_goods);
+  }
+  static async attence_mine(ctx) {
+    res.success(ctx, "查询考勤成功", attence);
+  }
+  static async attence_attend(ctx) {
+    let date = new Date();
+    let second = date.getSeconds();
+    if (second % 2 == 0) {
+      res.success(ctx, "打卡成功", { result: "2019-09-08 17:34:44" });
+    } else {
+      throw new MethodError("打卡失败");
+    }
+    res.success;
   }
 }
 module.exports = App;

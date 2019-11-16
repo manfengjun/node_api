@@ -21,4 +21,10 @@ router.post("/approve/detail", async (ctx, next) => {
 router.post("/approve/goods", async (ctx, next) => {
   await app.approve_goods(ctx);
 });
+router.post("/attence/mine", async (ctx, next) => {
+  await app.attence_mine(ctx);
+});
+router.post("/attence/attend", async (ctx, next) => {
+  await app.attence_attend(ctx);
+});
 module.exports = router;
