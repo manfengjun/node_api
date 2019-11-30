@@ -27,4 +27,7 @@ router.post("/attence/mine", async (ctx, next) => {
 router.post("/attence/attend", async (ctx, next) => {
   await app.attence_attend(ctx);
 });
+router.post("/ad", async (ctx, next) => {
+  await app.ad(ctx);
+});
 module.exports = router;

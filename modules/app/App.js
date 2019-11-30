@@ -67,7 +67,18 @@ class App {
     } else {
       throw new MethodError("打卡失败");
     }
-    res.success;
+  }
+  static async ad(ctx) {
+    res.success(ctx, "打卡成功", {
+      result: {
+        page_url: "",
+        update_time: "2019-11-20 00:00:00",
+        pic_url: "http://img.wtdms.com/1574235874674",
+        create_time: "2019-11-20 00:00:00",
+        end_time: "2019-11-25 00:00:00",
+        start_time: "2019-11-21 00:00:00"
+      }
+    });
   }
 }
 module.exports = App;
